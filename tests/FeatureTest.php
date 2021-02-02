@@ -3,6 +3,7 @@
 namespace Tests;
 
 use Illuminate\Support\Facades\Event;
+use Smartymoon\Crawler\Client;
 
 class FeatureTest extends TestCase
 {
@@ -17,6 +18,7 @@ class FeatureTest extends TestCase
 
     public function test_basic_features()
     {
-        $this->assertTrue(true);
+        $client = new Client();
+        $this->assertTrue($client->get('http://tool.test'));
     }
 }
