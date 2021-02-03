@@ -29,11 +29,6 @@
         "friendsofphp/php-cs-fixer": "^2.16"
     },
     "extra": {
-        "laravel": {
-            "providers": [
-                "\\Smartymoon\\Crawler\\PackageServiceProvider"
-            ]
-        },
         "hooks": {
             "pre-commit": [
                 "composer test",
